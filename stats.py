@@ -25,6 +25,7 @@ def count_chararcters(args):
     return character_dict
 
 def sort_characters(character_dict):
+    """Takes all characters in the dictionary and converts to a list of individual dictionaries, then sorting them by highest to lowest"""
     character_dict_list = []
     for char, count in character_dict.items():
         character_dict_list.append({"char": char, "count": count})
